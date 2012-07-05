@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.pyc
 *.pyo
 
@@ -15,3 +16,32 @@
 *.sqlite
 
 
+=======
+*.py[co]
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+
+#Translations
+*.mo
+
+#Mr Developer
+.mr.developer.cfg
+>>>>>>> f5a9c00bdcc4ea5ba3a5cc66c6b30ebaefbfad09
