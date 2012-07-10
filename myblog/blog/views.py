@@ -7,15 +7,20 @@ from models import Post, Comment
 
 def post_list(request):
     post_list = Post.objects.all()
-    
     print type(post_list)
     print post_list
-    
-    return HttpResponse('This should be a list of posts!')
+    lis=[]
+    for e in post_list:
+        lis.append(e.title)
+    return HttpResponse(lis)
 
 def post_detail(request, id, showComments=False):
-    pass
-    
+    post=Post.objects.get(pk=id)
+    if(showComments):
+     out='<h1>'+post.title+'</h1>'+'<br>'+post.body[:100]+'<br>'+post.body[100:200]
+    else:
+        out=post.title+'\n'
+    return HttpResponse(out)
 def post_search(request, term):
     pass
 
