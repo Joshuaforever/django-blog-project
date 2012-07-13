@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Joshua's blog</title>
+<style type="text/css">
+body
+{
+background-image:lavender;
+}
+h1
+{
+background-color:blue;
+text-align:center;
+text-style:gigi;
+color:red;
+font-size:50px;
+text-decoration:blink;
+}
+#me
+{
+text-align:center;
+font-size:30px;
+}
+marquee
+{
+color:green;
+font-style:italic;
+}
+</style>
+</head>
+<body>
+<h1>WELCOME TO MY BLOG.</h1>
+<h2><marquee direction="right" behavior="scroll">I LOVE MIT.</marquee></h2>
+<div id="me"><a href="/blog/posts/">CLICK TO VIEW MY BLOG.</a>
+</div>
+<div id="content"> 
+{% block content%}
+{% endblock %}
+</div>
+</body>
+</html>
